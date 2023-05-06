@@ -3,7 +3,7 @@ import sampleCreateChatIcon from "./chat (1).png"
 
 const ChatBox = () => {
   return (
-    <div className=' h-30 hover:bg-slate-500 transition focus:bg-slate-300 rounded-lg cursor-pointer flex p-2.5 gap-3 '>
+    <div className=' h-30 hover:bg-slate-500 transition focus:bg-slate-700 rounded-lg cursor-pointer flex p-2.5 gap-3 '>
         <div className="ChatImageDiv flex justify-center items-center">
             <img src={sampleCreateChatIcon} className='w-10' alt="" />
         </div>
