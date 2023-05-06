@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -29,6 +30,24 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
+=======
+import { useState } from 'react';
+import './App.css';
+import SignIn from './pages/SignIn/SignIn';
+import { Link, Router } from 'react-router-dom';
+import { Auth, Provider } from '../src/firebase-config';
+
+
+function App() {
+
+
+  return (
+    <>
+      <Link to={"/"}><SignIn/></Link>
+    </>
+    
+    
+>>>>>>> b276155f7dca059d632f195575e92eff9ee20c49
   )
 }
 
