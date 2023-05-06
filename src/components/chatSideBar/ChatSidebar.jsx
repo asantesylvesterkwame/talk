@@ -4,6 +4,8 @@ import addChatButtonIcon from "./plus.png";
 import { Auth, Provider } from '../../firebase-config';
 import { useAuthState } from "react-firebase-hooks/auth";
 import ChatBox from '../ChatBox/ChatBox';
+import NightModeIcon from "./night.png"
+import LightmodeIcon from "./light.png"
 
 const ChatSidebar = () => {
     const [user] = useAuthState(Auth);
@@ -23,14 +25,14 @@ const ChatSidebar = () => {
             <div className="menuSideDiv flex gap-5">
                 <div className="profileActionsMenuButtonDiv flex justify-center items-center">
                     {/* <h1 className='flex justify-center items-center w-10 h-10 border rounded-full'>...</h1> */}
-                    <img src={menuButton} alt="MenuButton" className='w-10' />
+                    <img src={menuButton} alt="MenuButton" className='w-10 hover:bg-slate-700 cursor-pointer rounded-full transition p-2' />
             </div>
                 <div className="AddNewChatDiv">
                 {/* <h1 className='bg-gray border rounded-full w-10 h-10 flex justify-center items-center'>+</h1> */}
-                <img src={addChatButtonIcon} alt="add chat button" className='w-10' />
+                <img src={addChatButtonIcon} alt="add chat button" className='w-10 hover:bg-slate-700 cursor-pointer rounded-full transition p-2 ' />
             </div>
                 <div className="darkModeDiv">
-
+                <img src={LightmodeIcon} className='w-10 hover:bg-slate-700 cursor-pointer rounded-full transition p-2' alt="" />
             </div>
             </div>
             
