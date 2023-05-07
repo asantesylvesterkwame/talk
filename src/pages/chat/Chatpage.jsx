@@ -8,7 +8,7 @@ const Chatpage = () => {
         <div className="sideBarDiv">
             <ChatSidebar/>
         </div>
-        <div className="chatsDiv">
+        <div className="chatsDiv w-full">
             <Chatsection/>
         </div>
     </div>
