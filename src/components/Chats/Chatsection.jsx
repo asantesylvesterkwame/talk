@@ -2,7 +2,9 @@ import React from 'react'
 
 const Chatsection = () => {
   return (
-    <div></div>
+    <div className='border h-screen'>
+        helo
+    </div>
   )
 }
 
