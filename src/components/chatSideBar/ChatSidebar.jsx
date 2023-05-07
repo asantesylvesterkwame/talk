@@ -15,7 +15,7 @@ const ChatSidebar = () => {
             <div className="ProfilepicandTitleSide flex gap-10">
         <div className="TopChatProfileSec flex gap-2.5 ">
             <div className="ProfilePic">
-                <img src={user.photoURL} className='rounded-full w-10' alt="" />
+                <img src={user.photoURL} className='rounded-full w-13' alt="" />
             </div>
             <div className="PageTitleDiv flex justify-center items-center">
                 <h1 className='flex justify-center items-center'>Chats</h1>
@@ -25,14 +25,14 @@ const ChatSidebar = () => {
             <div className="menuSideDiv flex gap-5">
                 <div className="profileActionsMenuButtonDiv flex justify-center items-center">
                     {/* <h1 className='flex justify-center items-center w-10 h-10 border rounded-full'>...</h1> */}
-                    <img src={menuButton} alt="MenuButton" className='w-10 hover:bg-slate-700 cursor-pointer rounded-full transition p-2' />
+                    <img src={menuButton} alt="MenuButton" className='w-12 hover:bg-slate-700 cursor-pointer rounded-full transition p-1' />
             </div>
-                <div className="AddNewChatDiv">
+                <div className="AddNewChatDiv flex justify-center items-center">
                 {/* <h1 className='bg-gray border rounded-full w-10 h-10 flex justify-center items-center'>+</h1> */}
-                <img src={addChatButtonIcon} alt="add chat button" className='w-10 hover:bg-slate-700 cursor-pointer rounded-full transition p-2 ' />
+                <img src={addChatButtonIcon} alt="add chat button" className='w-16  hover:bg-slate-700 cursor-pointer rounded-full transition p-2 ' />
             </div>
                 <div className="darkModeDiv">
-                <img src={LightmodeIcon} className='w-10 hover:bg-slate-700 cursor-pointer rounded-full transition p-2' alt="" />
+                <img src={LightmodeIcon} className='w-20 hover:bg-slate-700 cursor-pointer rounded-full transition p-2' alt="" />
             </div>
             </div>
             
